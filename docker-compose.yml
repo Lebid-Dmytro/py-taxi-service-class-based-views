@@ -3,8 +3,6 @@ services:
   web-app:
     build:
       context: .
-    ports:
-      - "8000:8000"
     volumes:
       - .:/main_app
       - ./db.sqlite3:/main_app/db.sqlite3
