@@ -6,9 +6,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-       - .:/main_app
-       - ./db.sqlite3:/main_app/db.sqlite3
-       - ./media:/main_app/media
+      - .:/main_app
+      - ./db.sqlite3:/main_app/db.sqlite3
+      - ./media:/main_app/media
     environment:
       - DB_HOST=localhost
       - DB_NAME=dbname
